@@ -1,8 +1,10 @@
+#its-unwanted,
 #its-a-trap,
 #its-an-attack {
     background: #fff;
 }
 
+#its-unwanted #main-feature,
 #its-a-trap #main-feature,
 #its-an-attack #main-feature {
     min-height: 220px;
@@ -11,17 +13,21 @@
     width: 430px;
 }
 
+* html #its-unwanted #main-feature,
 * html #its-a-trap #main-feature,
 * html #its-an-attack #main-feature { height: 265px; /* Hack for IE6 */ }
 
+#its-unwanted #main-feature h2    { font-size: 460%; }
 #its-a-trap #main-feature h2    { font-size: 520%; }
 #its-an-attack #main-feature h2 { font-size: 420%; }
 
+#its-unwanted #wrapper,
 #its-a-trap #wrapper,
 #its-an-attack #wrapper {
     background: url(/img/background.jpg) no-repeat scroll top center;
 }
 
+#its-unwanted #main-content,
 #its-a-trap #main-content,
 #its-an-attack #main-content {
     width: 500px;
@@ -30,16 +36,19 @@
     display: inline;
 }
 
+#its-unwanted #download,
 #its-a-trap #download,
 #its-an-attack #download {
     float: left;
     display: inline;
 }
 
+#its-unwanted #download ul.home-download,
 #its-a-trap #download ul.home-download,
 #its-an-attack #download ul.home-download {
 	width: 330px;
 }
 
+#its-unwanted #main-content h5,
 #its-a-trap #main-content h5,
 #its-an-attack #main-content h5 { margin-top: 35px; }
