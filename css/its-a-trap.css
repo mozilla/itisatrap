@@ -56,6 +56,10 @@
 	width: 330px;
 }
 
+#its-a-tracker #tests ul.trackers {
+    list-style: inside;
+}
+
 #unwanted #main-content h5,
 #its-a-tracker #main-content h5,
 #its-a-trap #main-content h5,
