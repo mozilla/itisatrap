@@ -1,10 +1,12 @@
 #unwanted,
+#its-a-tracker,
 #its-a-trap,
 #its-an-attack {
     background: #fff;
 }
 
 #unwanted #main-feature,
+#its-a-tracker #main-feature,
 #its-a-trap #main-feature,
 #its-an-attack #main-feature {
     min-height: 220px;
@@ -18,16 +20,19 @@
 * html #its-an-attack #main-feature { height: 265px; /* Hack for IE6 */ }
 
 #unwanted #main-feature h2    { font-size: 460%; }
+#its-a-tracker #main-feature h2    { font-size: 520%; }
 #its-a-trap #main-feature h2    { font-size: 520%; }
 #its-an-attack #main-feature h2 { font-size: 420%; }
 
 #unwanted #wrapper,
+#its-a-tracker #wrapper,
 #its-a-trap #wrapper,
 #its-an-attack #wrapper {
     background: url(/img/background.jpg) no-repeat scroll top center;
 }
 
 #unwanted #main-content,
+#its-a-tracker #main-content,
 #its-a-trap #main-content,
 #its-an-attack #main-content {
     width: 500px;
@@ -37,6 +42,7 @@
 }
 
 #unwanted #download,
+#its-a-tracker #download,
 #its-a-trap #download,
 #its-an-attack #download {
     float: left;
@@ -44,11 +50,33 @@
 }
 
 #unwanted #download ul.home-download,
+#its-a-tracker #download ul.home-download,
 #its-a-trap #download ul.home-download,
 #its-an-attack #download ul.home-download {
 	width: 330px;
 }
 
+#its-a-tracker #tests ul.trackers {
+    list-style: inside;
+}
+
 #unwanted #main-content h5,
+#its-a-tracker #main-content h5,
 #its-a-trap #main-content h5,
 #its-an-attack #main-content h5 { margin-top: 35px; }
+
+.hidden {
+    display: none
+}
+
+#blacklisted-loaded,
+#whitelisted-blocked {
+    color: red;
+    font-weight: bold;
+}
+
+#blacklisted-blocked,
+#whitelisted-loaded {
+    color: green;
+    font-weight: bold;
+}
