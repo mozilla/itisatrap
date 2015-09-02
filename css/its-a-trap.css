@@ -71,10 +71,12 @@
 
 #blacklisted-loaded,
 #whitelisted-blocked {
-    color: red
+    color: red;
+    font-weight: bold;
 }
 
 #blacklisted-blocked,
 #whitelisted-loaded {
-    color: green
+    color: green;
+    font-weight: bold;
 }
