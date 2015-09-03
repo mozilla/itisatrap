@@ -12,7 +12,7 @@ blacklisted.onload = function () {
 blacklisted.onerror = function () {
     toggleStatus("blacklisted", "blocked");
 };
-blacklisted.src = "http://trackertest.org/tracker.js";
+blacklisted.src = "https://trackertest.org/tracker.js";
 
 var whitelisted = window.document.getElementById("whitelisted-script");
 whitelisted.onload = function () {
@@ -21,4 +21,4 @@ whitelisted.onload = function () {
 whitelisted.onerror = function () {
     toggleStatus("whitelisted", "blocked");
 };
-whitelisted.src = "http://itisatracker.org/tracker.js";
+whitelisted.src = "https://itisatracker.org/tracker.js";
