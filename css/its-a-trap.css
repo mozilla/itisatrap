@@ -6,21 +6,14 @@
     background: #fff;
 }
 
-#forbidden #main-feature,
-#unwanted #main-feature,
-#its-a-tracker #main-feature,
-#its-a-trap #main-feature,
-#its-an-attack #main-feature {
+#main-feature {
     min-height: 220px;
     padding-top: 50px;
     padding-left: 80px;
     width: 430px;
 }
 
-* html #forbidden #main-feature,
-* html #unwanted #main-feature,
-* html #its-a-trap #main-feature,
-* html #its-an-attack #main-feature { height: 265px; /* Hack for IE6 */ }
+* html #main-feature { height: 265px; /* Hack for IE6 */ }
 
 #forbidden #main-feature h2    { font-size: 460%; }
 #unwanted #main-feature h2    { font-size: 460%; }
@@ -28,51 +21,31 @@
 #its-a-trap #main-feature h2    { font-size: 520%; }
 #its-an-attack #main-feature h2 { font-size: 420%; }
 
-#forbidden #wrapper,
-#unwanted #wrapper,
-#its-a-tracker #wrapper,
-#its-a-trap #wrapper,
-#its-an-attack #wrapper {
+#wrapper {
     background: url(/img/background.jpg) no-repeat scroll top center;
 }
 
-#forbidden #main-content,
-#unwanted #main-content,
-#its-a-tracker #main-content,
-#its-a-trap #main-content,
-#its-an-attack #main-content {
+#main-content {
     width: 500px;
     padding-left: 80px;
     float: left;
     display: inline;
 }
 
-#forbidden #download,
-#unwanted #download,
-#its-a-tracker #download,
-#its-a-trap #download,
-#its-an-attack #download {
+#download {
     float: left;
     display: inline;
 }
 
-#forbidden #download ul.home-download,
-#unwanted #download ul.home-download,
-#its-a-tracker #download ul.home-download,
-#its-a-trap #download ul.home-download,
-#its-an-attack #download ul.home-download {
-	width: 330px;
+#download ul.home-download {
+    width: 330px;
 }
 
 #its-a-tracker #tests ul.trackers {
     list-style: inside;
 }
 
-#forbidden #main-content h5,
-#unwanted #main-content h5,
-#its-a-tracker #main-content h5,
-#its-a-trap #main-content h5,
-#its-an-attack #main-content h5 { margin-top: 35px; }
+#main-content h5 { margin-top: 35px; }
 
 .hidden {
     display: none
