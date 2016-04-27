@@ -53,14 +53,12 @@
     display: none
 }
 
-#blacklisted-loaded,
-#whitelisted-blocked {
+.incorrect {
     color: red;
     font-weight: bold;
 }
 
-#blacklisted-blocked,
-#whitelisted-loaded {
+.correct {
     color: green;
     font-weight: bold;
 }

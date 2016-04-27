@@ -1,8 +1,8 @@
 function toggleStatus(trackerType, loaded) {
     var status = window.document.getElementById(trackerType + "-" + loaded);
     var waiting = window.document.getElementById(trackerType + "-waiting");
-    waiting.className = "hidden";
-    status.className = "";
+    waiting.classList.add("hidden");
+    status.classList.remove("hidden");
 }
 
 var blacklisted = window.document.getElementById("blacklisted-script");
