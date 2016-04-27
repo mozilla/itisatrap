@@ -62,3 +62,9 @@
     color: green;
     font-weight: bold;
 }
+
+#dntcompliant-loaded {
+    border: none;
+    height: 1.3em;
+    width: 13em;
+}

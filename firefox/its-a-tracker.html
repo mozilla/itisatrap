@@ -34,12 +34,14 @@
                 <div id="main-content">
                     <p>OK, not really, but Web trackers are out there on the Internet. This is a test page for Firefox's built-in <a href="https://support.mozilla.org/kb/tracking-protection-firefox">Tracking Protection</a>.</p>
 
-                    <p>If you're running Firefox 42 or later and viewing this page in a Private Window, you should see a shield icon in the URL bar and both of these should be green:</p>
+                    <p>If you're running Firefox 42 or later and viewing this page in a Private Window, you should see a shield icon in the URL bar and the first two (all three on Firefox 49 or later) of these should be green:</p>
 
                     <div id="tests">
                         <ul class="trackers">
                             <li>a simulated third-party tracker was <span id="blacklisted-waiting">...</span><span id="blacklisted-blocked" class="correct hidden">correctly blocked</span><span id="blacklisted-loaded" class="incorrect hidden">incorrectly loaded</span></li>
                             <li>a simulated first-party tracker was <span id="whitelisted-waiting">...</span><span id="whitelisted-loaded" class="correct hidden">correctly loaded</span><span id="whitelisted-blocked" class="incorrect hidden">incorrectly blocked</span></li>
+                            <li id="dntcompliant-test">a simulated DNT-compliant third-party tracker was <span id="dntcompliant-waiting">...</span><iframe id="dntcompliant-loaded" class="hidden"></iframe><span id="dntcompliant-blocked" class="incorrect hidden">incorrectly blocked</span></li>
+                            <li id="dntcompliant-warning" class="hidden">You have DNT enabled globally, we can't test whether or not DNT-compliant trackers receive the header.</li>
                         </ul>
                     </div>
 
