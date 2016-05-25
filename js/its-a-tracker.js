@@ -22,3 +22,11 @@ whitelisted.onerror = function () {
     toggleStatus("whitelisted", "blocked");
 };
 whitelisted.src = "https://itisatracker.org/tracker.js";
+
+var dnt = window.document.getElementById("dnt-off");
+if (navigator.doNotTrack == "1") {
+    dnt = window.document.getElementById("dnt-on");
+}
+var waiting = window.document.getElementById("dnt-waiting");
+waiting.classList.add("hidden");
+dnt.classList.remove("hidden");
