@@ -22,23 +22,3 @@ whitelisted.onerror = function () {
     toggleStatus("whitelisted", "blocked");
 };
 whitelisted.src = "https://itisatracker.org/tracker.js";
-
-var dntcompliant = window.document.getElementById("dntcompliant-loaded");
-var dntcompliantLoaded = false;
-dntcompliant.onload = function () {
-    dntcompliantLoaded = true;
-    toggleStatus("dntcompliant", "loaded");
-};
-setTimeout(function () {
-    if (!dntcompliantLoaded) {
-        toggleStatus("dntcompliant", "blocked");
-    }
-}, 3000);
-dntcompliant.src = "https://dntcompliant.org/check-dnt.html";
-
-if (navigator.doNotTrack == "yes" || navigator.doNotTrack == "1") {
-  var test = window.document.getElementById("dntcompliant-test");
-  var warning = window.document.getElementById("dntcompliant-warning");
-  test.classList.add("hidden");
-  warning.classList.remove("hidden");
-}
