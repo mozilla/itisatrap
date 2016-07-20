@@ -1,4 +1,3 @@
-#forbidden,
 #blocked,
 #unwanted,
 #its-a-tracker,
@@ -16,7 +15,6 @@
 
 * html #main-feature { height: 265px; /* Hack for IE6 */ }
 
-#forbidden #main-feature h2    { font-size: 460%; }
 #blocked #main-feature h2   { font-size: 460%; }
 #unwanted #main-feature h2    { font-size: 460%; }
 #its-a-tracker #main-feature h2    { font-size: 520%; }
