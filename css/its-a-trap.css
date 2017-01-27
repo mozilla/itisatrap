@@ -2,7 +2,8 @@
 #unwanted,
 #its-a-tracker,
 #its-a-trap,
-#its-an-attack {
+#its-an-attack,
+#flashblock {
     background: #fff;
 }
 
@@ -20,6 +21,7 @@
 #its-a-tracker #main-feature h2    { font-size: 520%; }
 #its-a-trap #main-feature h2    { font-size: 520%; }
 #its-an-attack #main-feature h2 { font-size: 420%; }
+#flashblock #main-feature h2 { font-size: 320%; }
 
 #wrapper {
     background: url(/img/background.jpg) no-repeat scroll top center;
@@ -30,6 +32,34 @@
     padding-left: 80px;
     float: left;
     display: inline;
+}
+
+#flashblock #tests th,
+#flashblock #tests td {
+    border-spacing: 1px;
+    text-align: center;
+}
+
+#flashblock #tests td:not(:first-child) {
+    border: 1px solid black;
+}
+
+#flashblock #tests td:not(:first-child),
+#flashblock #tests td iframe,
+#flashblock #tests td object,
+#flashblock #tests td img,
+#flashblock-frame,
+#flashblock-frame object,
+#flashblock-frame iframe {
+    width: 140px;
+    height: 100px;
+}
+
+#flashblock-frame,
+#flashblock-frame iframe {
+    border: none;
+    background: none;
+    min-width: 0px;
 }
 
 #download {

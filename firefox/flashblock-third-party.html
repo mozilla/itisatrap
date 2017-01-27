@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>It's Third-party Flash</title>
+        <link href="/css/min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/its-a-trap.css" media="screen" />
+    </head>
+
+    <body id="flashblock" class="portal-page locale-en-US portal-page">
+
+        <div id="wrapper">
+
+            <div id="doc">
+
+                <div id="nav-access">
+                    <a href="#nav-main">skip to Navigation</a>
+                    <a href="#switch">switch language</a>
+                </div>
+
+                <!-- start #header -->
+                <div id="header">
+                    <div>
+                        <h1><a href="http://www.mozilla.org/firefox/" title="Back to home page">Mozilla Firefox</a></h1>
+                        <a href="http://www.mozilla.org/" class="mozilla">visit <span>mozilla</span></a>
+                    </div>
+                </div>
+                <!-- end #header -->
+
+
+                <div id="main-feature">
+                    <h2>Blocked Flash Content!</h2>
+                    <p>I'm a Web page with Flash that is not trusted in a third-party context!</p>
+                </div>
+
+                <div id="main-content">
+                    <p>OK, not really, but Firefox can be configured to block content in a third-party context.</p>
+
+                    <table id="tests">
+                        <tr>
+                            <th>Test</th>
+                            <th>Expected</th>
+                            <th>Actual</th>
+                        </tr>
+                        <tr>
+                            <td>Top-Level</td>
+                            <td><img src="/img/flash-cta.png"></td>
+                            <td><object data="/swf/failure.swf"></object></td>
+                        </tr>
+                        <tr>
+                            <td>Third-party Blocked</td>
+                            <td><!-- Display nothing here. Blocked plugins are not displayed --></td>
+                            <td><iframe src="https://flashthirdparty.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
+                        </tr>
+                        <tr>
+                            <td>Third-party Block Exception</td>
+                            <td><img src="/img/flash-cta.png"></td>
+                            <td><iframe src="https://except.flashthirdparty.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
+                        </tr>
+                    </table>
+
+                    <div id="download">
+                        <ul class="home-download">
+                            <li>
+                                <a class="download-link download-firefox" href="http://www.mozilla.org/firefox/"><span class="download-content">
+                                    <span class="download-title">Firefox</span>
+                                    Free Download
+                                </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end #main-content  -->
+            </div><!-- end #doc -->
+        </div><!-- end #wrapper -->
+
+        <!-- start #footer -->
+        <div id="footer">
+            <div id="footer-contents">
+                <div id="copyright">
+                    <p id="footer-links"><a href="http://www.mozilla.org/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+                        <a href="http://www.mozilla.org/about/legal.html">Legal Notices</a> &nbsp;|&nbsp;
+                        <a href="http://www.mozilla.org/legal/fraud-report/index.html">Report Trademark Abuse</a></p>
+                    <p>Except where otherwise <a href="http://www.mozilla.org/about/legal/">noted</a>, content on this site is licensed under the <br /><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
+
+                </div>
+            </div>
+        </div>
+        <!-- end #footer -->
+    </body>
+</html>
