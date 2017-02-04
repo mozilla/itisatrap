@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>It's Third-party Flash</title>
+        <title>It's Subdocument Flash</title>
         <link href="/css/min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/its-a-trap.css" media="screen" />
     </head>
@@ -31,11 +31,11 @@
 
                 <div id="main-feature">
                     <h2>Blocked Flash Content!</h2>
-                    <p>I'm a Web page with Flash that is not trusted in a third-party context!</p>
+                    <p>I'm a Web page with Flash that is not trusted in a subdocument!</p>
                 </div>
 
                 <div id="main-content">
-                    <p>OK, not really, but Firefox can be configured to block content in a third-party context.</p>
+                    <p>OK, not really, but Firefox can be configured to block content in subdocuments.</p>
 
                     <table id="tests">
                         <tr>
@@ -49,14 +49,14 @@
                             <td><object data="/swf/failure.swf"></object></td>
                         </tr>
                         <tr>
-                            <td>Third-party Blocked</td>
+                            <td>Subdocument Blocked</td>
                             <td><!-- Display nothing here. Blocked plugins are not displayed --></td>
-                            <td><iframe src="https://flashthirdparty.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
+                            <td><iframe src="https://flashsubdoc.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
                         </tr>
                         <tr>
-                            <td>Third-party Block Exception</td>
+                            <td>Subdocument Block Exception</td>
                             <td><img src="/img/flash-cta.png"></td>
-                            <td><iframe src="https://except.flashthirdparty.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
+                            <td><iframe src="https://except.flashsubdoc.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
                         </tr>
                     </table>
 
