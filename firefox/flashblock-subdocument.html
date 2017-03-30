@@ -36,27 +36,36 @@
 
                 <div id="main-content">
                     <p>OK, not really, but Firefox can be configured to block content in subdocuments.</p>
+                    <p>Since the results of these tests are dependent on the setting you have picked for Flash (in the Plugins tab of about:addons), there is an Expected column below for each setting.</p>
 
                     <table id="tests">
                         <tr>
                             <th>Test</th>
-                            <th>Expected</th>
+                            <th>Expected for<br>"Always Activate"</th>
+                            <th>Expected for<br>"Ask to Activate"</th>
+                            <th>Expected for<br>"Never Activate"</th>
                             <th>Actual</th>
                         </tr>
                         <tr>
                             <td>Top-Level</td>
+                            <td><img src="/img/flash-loaded.png"></td>
                             <td><img src="/img/flash-cta.png"></td>
-                            <td><object data="/swf/failure.swf"></object></td>
+                            <td><!-- Display nothing here. Blocked plugins are not displayed --></td>
+                            <td><object data="/swf/loaded.swf"></object></td>
                         </tr>
                         <tr>
                             <td>Blocked subdocument in a non-third-party context</td>
+                            <td><img src="/img/flash-loaded.png"></td>
                             <td><img src="/img/flash-cta.png"></td>
-                            <td><iframe src="/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
+                            <td><!-- Display nothing here. Blocked plugins are not displayed --></td>
+                            <td><iframe src="/firefox/flashblock-loaded-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
                         </tr>
                         <tr>
                             <td>Subdocument Block Exception</td>
+                            <td><img src="/img/flash-loaded.png"></td>
                             <td><img src="/img/flash-cta.png"></td>
-                            <td><iframe src="https://except.flashsubdoc.itisatrap.org/firefox/flashblock-failure-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
+                            <td><!-- Display nothing here. Blocked plugins are not displayed --></td>
+                            <td><iframe src="https://except.flashsubdoc.itisatrap.org/firefox/flashblock-loaded-frame.html" scrolling="no" frameBorder="0" seamless='seamless'></iframe></td>
                         </tr>
                     </table>
 
