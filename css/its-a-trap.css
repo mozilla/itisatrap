@@ -1,5 +1,6 @@
 #blocked,
 #unwanted,
+#harmful,
 #its-a-tracker,
 #its-a-trap,
 #its-an-attack,
@@ -18,6 +19,7 @@
 
 #blocked #main-feature h2   { font-size: 460%; }
 #unwanted #main-feature h2    { font-size: 460%; }
+#harmful #main-feature h2    { font-size: 460%; }
 #its-a-tracker #main-feature h2    { font-size: 520%; }
 #its-a-trap #main-feature h2    { font-size: 520%; }
 #its-an-attack #main-feature h2 { font-size: 420%; }
